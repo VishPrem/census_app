@@ -46,6 +46,6 @@ census_df = load_data()
 pages_dict = {"Home:" : census_home, "Visualise Data" : census_plots}
 st.sidebar.title('Navigation')
 # Add radio buttons in the sidebar for navigation and call the respective pages based on user selection.
-user_choice = st.sidebar.radio('Go to', pages_dict.keys())
+user_choice = st.sidebar.radio('Go to', tuple(pages_dict.keys()))
 selected_page = pages_dict[user_choice]
 selected_page.app(census_df)
