@@ -9,7 +9,7 @@ import census_plots
 def load_data():
 	# Load the Adult Income dataset into DataFrame.
 
-	df = pd.read_csv('https://student-datasets-bucket.s3.ap-south-1.amazonaws.com/whitehat-ds-datasets/adult.csv', header=None)
+	df = pd.read_csv('adult.csv', header=None)
 	df.head()
 
 	# Rename the column names in the DataFrame using the list given above. 
